@@ -1,369 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Shuming Ma (Peking University)</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Shuming Ma</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#news">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#publication">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#activity">Activities</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#award">Awards</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <section id="about" class="bg-light">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-xs-12 col-sm-1">
-            
-          </div>
-
-          <div style="margin-top:40px" class="col-xs-12 col-sm-2">
-            <img src="assets/photo.jpg" style="width: 100%; max-width: 300px; border-radius: 20px" class="img-rounded">
-          </div>
-        
-
-          <div style="margin-top:40px" class="col-xs-12 col-sm-6">
-            <h3>
-              Shuming Ma (马树铭) <br>
-              <small>Master Student</small>
-            </h3>
-          <p>
-              <a href="http://lanco.pku.edu.cn">Language Computing and Machine Learning Group (LANCO)</a>,<br>
-              <a href="http://eecs.pku.edu.cn">School of EECS</a>, <a href="http://pku.edu.cn">Peking University</a>, Beijing, China<br>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Shuming Ma — research on language models, efficient architectures, reasoning, and multimodal systems."
+  />
+  <meta name="author" content="Shuming Ma" />
+  <title>Shuming Ma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <main class="page-main">
+      <section class="intro">
+        <div class="intro-copy">
+          <h1>Shuming Ma</h1>
+          <p class="name-alt">马树铭</p>
+          <p class="position">
+            Research on <strong>LLM pretraining</strong>, <strong>model architecture</strong>, and <strong>reasoning</strong>.
           </p>
-          <p>Email: shumingma (AT) pku.edu.cn</p>
+          <p>
+            I work on large language models with an emphasis on scalable pretraining, efficient architectures, and
+            reasoning. Recent projects include <a href="https://arxiv.org/abs/2402.17764" target="_blank" rel="noreferrer">BitNet</a>,
+            <a href="https://aclanthology.org/2025.acl-long.457/" target="_blank" rel="noreferrer">bitnet.cpp</a>,
+            <a href="https://arxiv.org/abs/2407.10969" target="_blank" rel="noreferrer">Q-Sparse</a>,
+            <a href="https://arxiv.org/abs/2211.13184" target="_blank" rel="noreferrer">TorchScale</a>,
+            <a href="https://arxiv.org/abs/2307.02486" target="_blank" rel="noreferrer">LongNet</a>, and
+            <a href="https://arxiv.org/abs/2203.00555" target="_blank" rel="noreferrer">DeepNet</a>.
+          </p>
+          <p class="links-inline">
+            <a href="https://scholar.google.com/citations?user=J44tjDMAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+            <span>/</span>
+            <a href="https://github.com/shumingma" target="_blank" rel="noreferrer">GitHub</a>
+            <span>/</span>
+            <a href="https://openreview.net/profile?id=~Shuming_Ma1" target="_blank" rel="noreferrer">OpenReview</a>
+            <span>/</span>
+            <a href="https://x.com/ma_shuming" target="_blank" rel="noreferrer">X / Twitter</a>
+          </p>
+        </div>
+
+        <div class="intro-photo">
+          <img src="assets/photo.jpg" alt="Portrait of Shuming Ma" />
+        </div>
+      </section>
+
+      <section class="section" id="news">
+        <h2>News</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <div class="news-date">2025</div>
+            <div class="news-copy">
+              Introduced <strong>LongReasonArena</strong>, a benchmark for long reasoning that scales tasks to as much
+              as 1 million reasoning tokens.
+              <span class="item-links">
+                <a href="https://arxiv.org/abs/2508.19363" target="_blank" rel="noreferrer">[paper]</a>
+              </span>
+            </div>
           </div>
 
-          <div style="margin-top:40px" class="col-lg-10 mx-auto">
-              <h4>Short Bio</h4>
-              <p class="lead">
-                Hi, I am a final-year master student from the School of Electronics Engineering and Computer Science (EECS) 
-                at Peking University (PKU). I work on natural language processing and machine learning, under the supervision of Prof. <a href="http://xusun.org">Xu Sun</a>. 
-                My research interests mainly lie in deep learning and natural language generation, especially text summarization, machine translation, 
-                and machine commenting.
-              </p>
+          <div class="news-item">
+            <div class="news-date">2025</div>
+            <div class="news-copy">
+              Released the <strong>BitNet b1.58 2B4T</strong> technical report for an open-source native 1-bit LLM at
+              the 2B scale trained on 4 trillion tokens.
+              <span class="item-links">
+                <a href="https://arxiv.org/abs/2504.12285" target="_blank" rel="noreferrer">[tech report]</a>
+                <a href="https://huggingface.co/microsoft/bitnet-b1.58-2B-4T" target="_blank" rel="noreferrer">[huggingface]</a>
+              </span>
             </div>
-        </div>
-      </div>
-    </section>
+          </div>
 
-    <section id="news">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 mx-auto">
-              <h2>News</h2>
-              <p style="margin-bottom: 25px"></p>
-              <ul>
-              <li style="line-height: 20px; margin-bottom: 10px;">May. 14th, 2018 - Two papers accepted to ACL 2019.</li>
-              <li style="line-height: 20px; margin-bottom: 10px;">Nov. 1st, 2018 - Two papers accepted to AAAI 2019.</li>
-              <li style="line-height: 20px; margin-bottom: 10px;">Aug. 29th, 2018 - Attended and presented one paper at NLPCC 2018.</li>
-              <li style="line-height: 20px; margin-bottom: 10px;">Jul. 16th, 2018 - Attended and presented two papers at ACL 2018.</li>
-              <li style="line-height: 20px; margin-bottom: 10px;">May. 8th, 2018 - Started an internship at Microsoft Research Asia.</li>
-              </ul>
+          <div class="news-item">
+            <div class="news-date">2025</div>
+            <div class="news-copy">
+              Published <strong>Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning</strong> on
+              more efficient test-time scaling.
+              <span class="item-links">
+                <a href="https://openreview.net/forum?id=6ICFqmixlS" target="_blank" rel="noreferrer">[paper]</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">2025</div>
+            <div class="news-copy">
+              Published <strong>bitnet.cpp</strong>, an inference stack for ternary and 1-bit LLMs aimed at efficient
+              edge inference.
+              <span class="item-links">
+                <a href="https://aclanthology.org/2025.acl-long.457/" target="_blank" rel="noreferrer">[paper]</a>
+                <a href="https://github.com/microsoft/BitNet" target="_blank" rel="noreferrer">[github]</a>
+              </span>
             </div>
           </div>
         </div>
       </section>
-    
-    <section id="publication" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>Publications</h2>
-            <p style="margin-bottom: 25px"></p>
-            <ol>
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                Key Fact as Pivot: A Two-Stage Model for Low Resource Table-to-Text Generation
-                  <br>
-                <strong>Shuming Ma</strong>, Pengcheng Yang, Tianyu Liu, Peng Li, Jie Zhou, Xu Sun<br>
-                <strong>ACL</strong> 2019
-            </li>
 
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                A Deep Reinforced Sequence-to-Set Model for Multi-Label Classification
-                  <br>
-                Pengcheng Yang, Fuli Luo, <strong>Shuming Ma</strong>, Junyang Lin, Xu Sun<br>
-                <strong>ACL</strong> 2019 (Short Paper)
-            </li>
-
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                LiveBot: Generating Live Video Comments Based on Visual and Textual Contexts
-                  <br>
-                <strong>Shuming Ma</strong>, Lei Cui, Damai Dai, Furu Wei, Xu Sun<br>
-                <strong>AAAI</strong> 2019
-                <a href="https://arxiv.org/pdf/1809.04938.pdf">[pdf]</a>
-                <a href="https://github.com/lancopku/livebot">[code]</a>
-            </li>
-
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                Hierarchical Encoder with Auxiliary Supervision for Neural Table-to-text Generation: Learning Better Representation for Tables
-                  <br>
-                Tianyu Liu, Fuli Luo, Qiaolin Xia, <strong>Shuming Ma</strong>, Baobao Chang, Zhifang Sui<br>
-                <strong>AAAI</strong> 2019
-            </li>
-              
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                A Hierarchical End-to-End Model for Jointly Improving Text Summarization and Sentiment Classification
-                  <br>
-                <strong>Shuming Ma</strong>, Xu Sun, Junyang Lin, Xuancheng Ren<br>
-                <strong>IJCAI</strong> 2018
-                <a href="https://arxiv.org/pdf/1805.01089.pdf">[pdf]</a>
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                Query and Output: Generating Words by Querying Distributed Word Representations for Paraphrase Generation
-                  <br>
-                <strong>Shuming Ma</strong>, Xu Sun, Wei Li, Sujian Li, Wenjie Li, Xuancheng Ren<br>
-                <strong>NAACL</strong> 2018
-                <a href="https://arxiv.org/pdf/1803.01465.pdf">[pdf]</a>
-                <a href="https://github.com/shumingma/WEAN">[code]</a>
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">Autoencoder as Assistant Supervisor: Improving Text Representation for Chinese Social Media Text Summarization
-                  <br>
-                <strong>Shuming Ma</strong>, Xu Sun, Junyang Lin, Houfeng Wang<br>
-                <strong>ACL</strong> 2018 (Short Paper)
-                <a href="https://arxiv.org/pdf/1805.04869.pdf">[pdf]</a>
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">Bag-of-Words as Target for Neural Machine Translation
-                  <br>
-                <strong>Shuming Ma</strong>, Xu Sun, Yizhong Wang, Junyang Lin<br>
-                <strong>ACL</strong> 2018 (Short Paper)
-                <a href="https://arxiv.org/pdf/1805.04871.pdf">[pdf]</a>
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                Global Encoding for Abstractive Summarization
-                  <br>
-                Junyang Lin, Xu Sun, <strong>Shuming Ma</strong>, Qi Su<br>
-                <strong>ACL</strong> 2018 (Short Paper)
-                <a href="https://arxiv.org/pdf/1805.03989.pdf">[pdf]</a>
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">Automatic Academic Paper Rating Based on Modularized Hierarchical Convolution Neural Network
-                  <br>
-                Pengcheng Yang, Xu Sun, Wei Li, <strong>Shuming Ma</strong><br>
-                <strong>ACL</strong> 2018 (Short Paper)
-                <a href="https://arxiv.org/pdf/1805.03977.pdf">[pdf]</a>
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                Phrase-level Self-Attention Networks for Universal Sentence Encoding
-                  <br>
-                Wei Wu, Houfeng Wang, Tianyu Liu, <strong>Shuming Ma</strong><br>
-                <strong>EMNLP</strong> 2018
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                Semantic-Unit-Based Dilated Convolution for Multi-Label Text Classification
-                  <br>
-                Junyang Lin, Xu Sun, Pengcheng Yang, <strong>Shuming Ma</strong>, Qi Su<br>
-                <strong>EMNLP</strong> 2018
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                SGM: Sequence Generation Model for Multi-label Classification 
-                  <br>
-                Pengcheng Yang, Xu Sun, Wei Li, <strong>Shuming Ma</strong>, Wei Wu, Houfeng Wang<br>
-                <strong>COLING</strong> 2018 (Best Paper Award)
-                <a href="https://arxiv.org/pdf/1806.04822.pdf">[pdf]</a>
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                Does Higher Order LSTM Have Better Accuracy for Segmenting and Labeling Sequence Data? 
-                  <br>
-                Yi Zhang, Xu Sun, <strong>Shuming Ma</strong>, Yang Yang, Xuancheng Ren<br>
-                <strong>COLING</strong> 2018
-                <a href="https://arxiv.org/pdf/1711.08231.pdf">[pdf]</a>
-            </li>
-              
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                Deconvolution-Based Global Decoding for Neural Machine Translation 
-                  <br>
-                Junyang Lin, Xu Sun, Xuancheng Ren, <strong>Shuming Ma</strong>, Jinsong Su, Qi Su<br>
-                <strong>COLING</strong> 2018
-                <a href="https://arxiv.org/pdf/1806.03692.pdf">[pdf]</a>
-            </li>
-              
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                An End-to-End Question Answering Model Based on Semi-Structured Tables 
-                  <br>
-                Hao Wang, Xiaodong Zhang, <strong>Shuming Ma</strong>, Xu Sun, Houfeng Wang<br>
-                <strong>COLING</strong> 2018
-            </li>
-              
-            <li style="line-height: 20px; margin-bottom: 20px;">
-                Accelerating Graph-based Dependency Parsing with Lock-Free Parallel Perceptron
-                  <br>
-                <strong>Shuming Ma</strong>, Xu Sun, Yi Zhang, Bingzhen Wei<br>
-                <strong>NLPCC</strong> 2018
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">Improving Semantic Relevance for Sequence-to-Sequence Learning of Chinese Social Media Text Summarization
-                  <br>
-                <strong>Shuming Ma</strong>, Xu Sun, Jingjing Xu, Houfeng Wang, Wenjie Li, Qi Su<br>
-                <strong>ACL</strong> 2017 (Short Paper)
-                <a href="https://arxiv.org/pdf/1706.02459.pdf">[pdf]</a>
-                <a href="https://github.com/shumingma/SRB">[code]</a>
-            </li> 
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">meProp: Sparsified Back Propagation for Accelerated Deep Learning with Reduced Overfitting
-                  <br>
-                Xu Sun, Xuancheng Ren, <strong>Shuming Ma</strong>, Houfeng Wang<br>
-                <strong>ICML</strong> 2017
-                <a href="https://arxiv.org/pdf/1706.06197.pdf">[pdf]</a>
-                <a href="https://github.com/jklj077/meProp">[code]</a>
-            </li>
-                
-            <li style="line-height: 20px; margin-bottom: 20px;">Transfer Deep Learning for Low-Resource Chinese Word Segmentation with a Novel Neural Network
-                  <br>
-                Jingjing Xu, <strong>Shuming Ma</strong>, Yi Zhang, Bingzhen Wei, Xiaoyan Cai, Xu Sun<br>
-                <strong>NLPCC</strong> 2017
-                <a href="https://arxiv.org/pdf/1702.04488.pdf">[pdf]</a>
-                <a href="https://github.com/jingjingxupku/Low-Resource-CWS-">[code]</a>
-            </li>
-
-            <li style="line-height: 20px; margin-bottom: 20px;">Training Simplification and Model Simplification for Deep Learning: A Minimal Effort Back Propagation Method.
-                <br>
-              Xu Sun, Xuancheng Ren, <strong>Shuming Ma</strong>, Bingzhen Wei, Wei Li, Jingjing Xu, Houfeng Wang, Yi Zhang<br>
-              IEEE Transactions on Knowledge and Data Engineering (<strong>TKDE</strong>)
-            </li>
-
-            <li style="line-height: 20px; margin-bottom: 20px;">Towards Easier and Faster Sequence Labeling for Natural Language Processing: A Search-based Probabilistic Online Learning Framework (SAPO).
-                <br>
-              Xu Sun, <strong>Shuming Ma</strong>, Yi Zhang, Xuancheng Ren<br>
-              Information Sciences. Elsevier.
-            </li>
-
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>Education and Experience</h2>
-            <p style="margin-bottom: 25px"></p>
-            <ul>
-            <li style="line-height: 20px; margin-bottom: 10px;">Interning in NLC Group, Microsoft Research Asia, May 2018 - Sept. 2018.  <br> Mentor: Dr. <a href="http://mindio.org/">Furu Wei</a> and Dr. <a href="https://www.microsoft.com/en-us/research/people/lecu/">Lei Cui</a></li>
-            <li style="line-height: 20px; margin-bottom: 10px;">Master-degree student in Computer Science, Peking Universiy, Sept. 2016 - Now.  <br> Advisor: Prof. <a href="http://xusun.org">Xu Sun</a></li>
-            <li style="line-height: 20px; margin-bottom: 10px;">Bachelor of Engineering in Engineering Structure Analysis, Peking University, Sept. 2012 - Jul. 2016.</li>
-            <li style="line-height: 20px; margin-bottom: 10px;">Bachelor of Science in Psychology (double Bachelor's degree), Peking University, Sept. 2013 - Jul. 2016.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="activity" class="bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 mx-auto">
-              <h2>Academic Activities</h2>
-              <p style="margin-bottom: 25px"></p>
-              <ul>
-              <li>Program Committee Member: ACL 2017, ACL 2019, EMNLP 2018, EMNLP 2019, NLPCC 2018, NLPCC 2019</li>
-              <li>Sub-reviewer: AAAI 2016, IJCAI 2016, ACL 2016, AAAI 2017, IJCAI 2018 </li>  
-              <li>Journal reviewer: Neural Networks</li>     
-              </ul>       
-            </div>
-          </div>
-        </div>
-      </section>
-  
-    <section id="award">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>Awards</h2>
-            <p style="margin-bottom: 25px"></p>
-            <ul>
-            <li style="line-height: 20px; margin-bottom: 10px;">National Scholarship, 2018</li>
-            <li style="line-height: 20px; margin-bottom: 10px;">Academic Excellence Award, 2018</li>
-            <li style="line-height: 20px; margin-bottom: 10px;">COLING 2018 Best Paper Award</li>
-            <li style="line-height: 20px; margin-bottom: 10px;">Canon Scholarship, 2017</li>
-            <li style="line-height: 20px; margin-bottom: 10px;">Merit Student in Peking University, 2017</li>
-            <li style="line-height: 20px; margin-bottom: 10px;"><a href="http://www.comap.com/undergraduate/contests/">Mathematical Contest In Modeling (MCM)</a>, <strong>Meritorious Winner</strong>, 2015</li>
-            <li>Schlumberger Scholarship, 2015</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Shuming Ma 2018</p>
-        <p class="m-0 text-center text-white">
-            <!-- Start of CuterCounter Code -->
-            Page Views: <a href="http://www.cutercounter.com/" target="_blank"><img src="http://www.cutercounter.com/hit.php?id=gmvfkoqa&nd=6&style=14" border="0" alt="hit counter"></a>
-            <!-- End of CuterCounter Code -->
+      <section class="section" id="selected">
+        <h2>Selected Publications</h2>
+        <p class="section-note">
+          <em>For a full publication list, see Google Scholar.</em>
         </p>
-      </div>
-      <!-- /.container -->
-  
-  
+
+        <div class="publication">
+          <div class="pub-title">The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits</div>
+          <div class="pub-venue">2024</div>
+          <div class="pub-summary">Introduces BitNet b1.58, showing that ternary 1-bit transformers can match full-precision baselines with substantially lower cost.</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2402.17764" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="pub-title">BitNet: Scaling 1-bit Transformers for Large Language Models</div>
+          <div class="pub-venue">2023</div>
+          <div class="pub-summary">Introduces BitNet, a scalable and stable 1-bit transformer architecture for large language model pretraining.</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2310.11453" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="pub-title">BitNet b1.58 2B4T Technical Report</div>
+          <div class="pub-venue">2025</div>
+          <div class="pub-summary">Presents the open-source 2B native 1-bit LLM trained on 4 trillion tokens and released with model weights.</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2504.12285" target="_blank" rel="noreferrer">Tech report</a>
+            <a href="https://huggingface.co/microsoft/bitnet-b1.58-2B-4T" target="_blank" rel="noreferrer">Hugging Face</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="pub-title">bitnet.cpp: Efficient Edge Inference for Ternary LLMs</div>
+          <div class="pub-venue">2025</div>
+          <div class="pub-summary">An inference system for ternary and 1-bit LLMs with optimized kernels for efficient, lossless edge deployment.</div>
+          <div class="pub-links">
+            <a href="https://aclanthology.org/2025.acl-long.457/" target="_blank" rel="noreferrer">Paper</a>
+            <a href="https://github.com/microsoft/BitNet" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="pub-title">Q-Sparse</div>
+          <div class="pub-venue">2024</div>
+          <div class="pub-summary">Training LLMs with fully sparsely-activated linear transformations for more efficient inference.</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2407.10969" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="pub-title">TorchScale: Transformers at Scale</div>
+          <div class="pub-venue">2022</div>
+          <div class="pub-summary">An open-source toolkit for scaling transformers, including architectures such as DeepNet and LongNet.</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2211.13184" target="_blank" rel="noreferrer">Paper</a>
+            <a href="https://github.com/microsoft/torchscale" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="pub-title">LongNet: Scaling Transformers to 1,000,000,000 Tokens</div>
+          <div class="pub-venue">2023</div>
+          <div class="pub-summary">Introduces dilated attention to scale transformer context length to more than 1 billion tokens.</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2307.02486" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="pub-title">DeepNet: Scaling Transformers to 1,000 Layers</div>
+          <div class="pub-venue">2022</div>
+          <div class="pub-summary">Introduces DeepNorm and initialization strategies that stabilize extremely deep transformer training.</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2203.00555" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Updated April 2026.</p>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
-
-  </body>
-
+  </div>
+</body>
 </html>
